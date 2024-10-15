@@ -5,7 +5,7 @@ ex:Author0 a ex:Author ;
     ex:hasName "Brandon Dave"^^xsd:string ;
     ex:published ex:Publication0 .
 
-ex:Author1 a ex:Author ;
+ex:Author2 a ex:Author ;
     ex:hasName "Alexis Ellis"^^xsd:string ;
     ex:published ex:Publication3 .
 
@@ -25,7 +25,7 @@ ex:Publication1 ex:hasTitle "An Ontology for Conversations with Virtual Research
         "ontology design pattern"^^xsd:string,
         "polymer science"^^xsd:string ;
     ex:hasYear "2024"^^xsd:gYear ;
-    ex:publishedBy ex:Author2 .
+    ex:publishedBy ex:Author1 .
 
 ex:Publication2 ex:hasTitle "A Knowledge Graph-Powered Conversational Agent for Video Game Recommendations"^^xsd:string ;
     ex:hasTopic "artificial intelligence"^^xsd:string,
@@ -34,16 +34,16 @@ ex:Publication2 ex:hasTitle "A Knowledge Graph-Powered Conversational Agent for 
         "large language model"^^xsd:string,
         "ontology"^^xsd:string ;
     ex:hasYear "2023"^^xsd:gYear ;
-    ex:publishedBy ex:Author2 .
+    ex:publishedBy ex:Author1 .
 
 ex:Publication3 ex:hasTitle "EASY-AI: sEmantic And compoSable glYphs for representing AI systems"^^xsd:string ;
     ex:hasTopic "artificial intelligence"^^xsd:string,
         "human factors"^^xsd:string,
         "neurosymbolic AI"^^xsd:string ;
     ex:hasYear "2024"^^xsd:gYear ;
-    ex:publishedBy ex:Author1 .
+    ex:publishedBy ex:Author2 .
 
-ex:Author2 a ex:Author ;
+ex:Author1 a ex:Author ;
     ex:hasName "Anmol Saini"^^xsd:string ;
     ex:published ex:Publication1,
         ex:Publication2 .

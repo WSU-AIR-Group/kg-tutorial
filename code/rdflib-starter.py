@@ -42,10 +42,10 @@ graph = init_kg()
 # with open(filename, "w") as f:
 #     graph.parse(f)
 
-filedir = "../data"
-filename = "2024-air-kg-data.csv"
+data_dir = "../data"
+data_file = "2024-air-kg-data.csv"
 
-with open(os.path.join(filedir, filename), "r") as f:
+with open(os.path.join(data_dir, data_file), "r") as f:
     lines = [ lines for lines in f.readlines() ]
 
 # print(lines[0:4])
@@ -105,5 +105,6 @@ for line in lines[1:]:
     graph.add( (author_uri, pfs["ex"]["published"], publication_uri) )
     graph.add( (publication_uri, pfs["ex"]["publishedBy"], author_uri) )
 
+output_dir = "../output"
 output_file = "output.ttl"
-temp = graph.serialize(format="turtle", encoding="utf-8", destination=output_file)
+temp = graph.serialize(format="turtle", encoding="utf-8", destination=os.path.join(output_dir, output_file))
