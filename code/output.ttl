@@ -1,0 +1,50 @@
+@prefix ex: <https://example.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Author0 a ex:Author ;
+    ex:hasName "Brandon Dave"^^xsd:string ;
+    ex:published ex:Publication0 .
+
+ex:Author1 a ex:Author ;
+    ex:hasName "Alexis Ellis"^^xsd:string ;
+    ex:published ex:Publication3 .
+
+ex:Publication0 ex:hasTitle "Understanding Impact of Graph Structure on Knowledge Graph Embedding"^^xsd:string ;
+    ex:hasTopic "knowledge graph"^^xsd:string,
+        "knowledge graph embedding"^^xsd:string,
+        "ontology"^^xsd:string ;
+    ex:hasYear "2024"^^xsd:gYear ;
+    ex:publishedBy ex:Author0 .
+
+ex:Publication1 ex:hasTitle "An Ontology for Conversations with Virtual Research Assistants"^^xsd:string ;
+    ex:hasTopic "artificial intelligence"^^xsd:string,
+        "conversational model"^^xsd:string,
+        "knowledge graph"^^xsd:string,
+        "large language model"^^xsd:string,
+        "ontology"^^xsd:string,
+        "ontology design pattern"^^xsd:string,
+        "polymer science"^^xsd:string ;
+    ex:hasYear "2024"^^xsd:gYear ;
+    ex:publishedBy ex:Author2 .
+
+ex:Publication2 ex:hasTitle "A Knowledge Graph-Powered Conversational Agent for Video Game Recommendations"^^xsd:string ;
+    ex:hasTopic "artificial intelligence"^^xsd:string,
+        "conversational model"^^xsd:string,
+        "knowledge graph"^^xsd:string,
+        "large language model"^^xsd:string,
+        "ontology"^^xsd:string ;
+    ex:hasYear "2023"^^xsd:gYear ;
+    ex:publishedBy ex:Author2 .
+
+ex:Publication3 ex:hasTitle "EASY-AI: sEmantic And compoSable glYphs for representing AI systems"^^xsd:string ;
+    ex:hasTopic "artificial intelligence"^^xsd:string,
+        "human factors"^^xsd:string,
+        "neurosymbolic AI"^^xsd:string ;
+    ex:hasYear "2024"^^xsd:gYear ;
+    ex:publishedBy ex:Author1 .
+
+ex:Author2 a ex:Author ;
+    ex:hasName "Anmol Saini"^^xsd:string ;
+    ex:published ex:Publication1,
+        ex:Publication2 .
+
