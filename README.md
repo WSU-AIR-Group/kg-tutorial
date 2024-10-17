@@ -7,3 +7,4 @@ This repository provides a set of scripts and data used to generate a Turtle (TT
 * `containers/` -- contains files to create a playground container environment for a KG Tutorial
 * `data/` -- contains the input datasets used to generate the knowledge graph.  
 * `output/` -- stores the generated Turtle file.
+* `schema-diagrams/` -- contains graphical representations of the knowledge graph.
