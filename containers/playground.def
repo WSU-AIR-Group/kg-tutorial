@@ -7,13 +7,13 @@ From: ubuntu:focal
     apt-get install -y software-properties-common
     add-apt-repository universe
     apt-get update
-    apt-get install -y wget curl vim python3 python3-dev python3-pip firefox screen
+    apt-get install -y wget curl vim python3 python3-dev python3-pip
 
     # Upgrade pip
     pip3 install --upgrade pip
 
-    # Install Jupyter and additional packages using pip3
-    pip3 install jupyterlab-server jupyter numpy geopandas rdflib pandas shapely fiona requests colorama ontospy matplotlib tqdm pyproj s2sphere
+    # Install packages using pip3
+    pip3 install rdflib
 
     # Download Java and Apache Jena Fuseki
     wget https://download.oracle.com/java/22/archive/jdk-22.0.2_linux-x64_bin.tar.gz
@@ -22,7 +22,6 @@ From: ubuntu:focal
     # Create directories
     mkdir -p /usr/java
     mkdir -p /root/apache-jena-fuseki
-    mkdir -p /root/jupyter-notebooks
 
     # Extract the downloads
     tar -xzf jdk-22.0.2_linux-x64_bin.tar.gz -C /usr/java
@@ -48,17 +47,4 @@ From: ubuntu:focal
     wget --version
     vim --version
     python3 --version
-    firefox --version
-    pip3 show numpy | grep Version
-    pip3 show geopandas | grep Version
     pip3 show rdflib | grep Version
-    pip3 show pandas | grep Version
-    pip3 show shapely | grep Version
-    pip3 show fiona | grep Version
-    pip3 show requests | grep Version
-    pip3 show colorama | grep Version
-    pip3 show ontospy | grep Version
-    pip3 show matplotlib | grep Version
-    pip3 show tqdm | grep Version
-    pip3 show pyproj | grep Version
-    pip3 show s2sphere | grep Version
