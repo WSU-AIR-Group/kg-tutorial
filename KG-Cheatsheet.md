@@ -31,11 +31,17 @@ Narrative
 ### Auxiliary Links:
 
 **Protégé:** https://protege.stanford.edu/
+
 **KG Playground:**  https://github.com/kastle-lab/kastle-research/blob/master/containers/playground.def
+
 **rdflib-starter python script:**   https://github.com/kastle-lab/cs7810-intro-to-ke/blob/master/templates/rdflib-starter.py
+
 **OWL2 Specification:**  https://www.w3.org/TR/owl2-syntax/
+
 **RDF Specification:**  https://www.w3.org/TR/rdf-schema/
+
 **Datasheet:** [2024-air-kg-data](https://docs.google.com/spreadsheets/d/1uRd4EC0_EZrA_55WOp6USQ78cLJe8aOdd1CkxsmDdRU/edit?gid=0#gid=0)
+
 **Further reading:** 
 KASTLE Drawbridge:  https://github.com/kastle-lab/kastle-drawbridge
 
