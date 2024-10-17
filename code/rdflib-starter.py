@@ -48,9 +48,6 @@ data_file = "2024-air-kg-data.csv"
 with open(os.path.join(data_dir, data_file), "r") as f:
     lines = [ lines for lines in f.readlines() ]
 
-# print(lines[0:4])
-header = lines[0]
-
 authors = set()
 
 # gets unique author names
@@ -58,10 +55,8 @@ for line in lines[1:]:
     split = line.split(",")
     name = f"{split[0].strip()} {split[1].strip()}"
     authors.add(name)
-    # print(name)
 
 author_dict = {}
-
 author_count = 0
 
 # uniquely add authors to kg
@@ -92,6 +87,7 @@ for line in lines[1:]:
     # minting publication uri
     publication_uri = pfs["ex"][f"Publication{publication_count}"]
     publication_count += 1
+
     # binding publication uri to kg
     graph.add( (publication_uri, pfs["ex"]["hasTitle"], Literal(title, datatype=XSD.string)) )
     graph.add( (publication_uri, pfs["ex"]["hasYear"], Literal(year, datatype=XSD.gYear)) )
